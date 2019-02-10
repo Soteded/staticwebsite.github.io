@@ -1,6 +1,8 @@
 # STATIC WEBSITE Python
 
 * Summary
-  * 1.
-  * 2.
-  * 3.
+  * Presentation
+  * Requirements
+  * Usage
+
+## 1. Presentation
