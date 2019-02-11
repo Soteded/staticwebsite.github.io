@@ -7,6 +7,7 @@ import os
 @click.option('-o','--output-directory','--output_directory', default = " ", help="Indicate the path where you want your HTML to go.")
 @click.option('-t','--title', default = "Static Website", help ="Choose your WebSite title. If you dont, it will take a default one (Static Website)")
 
+
 def ElConvertissore(input_directory,output_directory,title):
 
     nbr_Md = 1
@@ -15,9 +16,11 @@ def ElConvertissore(input_directory,output_directory,title):
     if output_directory == '':
         print("No such output directory choosed")
         quit()
+        
     if input_directory == '':
         print("No such input directory choosed")
         quit()
+        
     if input_directory[0] == '"' or input_directory[0] == "'":
         print("Wrong format input")
         quit()
@@ -79,5 +82,6 @@ def ElConvertissore(input_directory,output_directory,title):
                 nbr_Md += 1
                 print("Conversion successfully ended !")
 
+                
 if __name__ == "__main__":
     ElConvertissore()
